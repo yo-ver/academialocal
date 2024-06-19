@@ -1,5 +1,6 @@
 :root{
     --bg: #121212;
+    --black: #121212;
     --feat: #FF3E00;
 }
 
@@ -68,8 +69,15 @@ h6 {
     overflow-wrap: break-word;
 }
 
+a{
+    display: inline-block;
+    text-decoration: none;
+
+}
+
 h1,h2,h3{
     font-family: 'Roboto Condensed', sans-serif;
+    line-height: 1.2;
 }
 
 h1{
@@ -79,5 +87,18 @@ h1{
 /* Clases*/
 .wrap{
     margin: 0, auto;
-    padding: 0 40px;
+    padding: 0 20px;
+}
+
+.btn{
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: 250ms;
+}
+
+.btn:hover{
+    background-color: #fff;
+    color: var(--black);
 }
