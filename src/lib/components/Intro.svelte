@@ -1,14 +1,25 @@
 <script>
-    import imgHome from '$lib/assets/musculacao.jpg'
-    import icon from '$lib/assets/icon-muscle.png'
+    import imgMusculacao from '$lib/assets/musculacao.jpg'
+    import iconMuscle from '$lib/assets/icon-muscle.png'
+
+    export let title
+    export let content
+    export let btn
+    export  let href
+
+    export let img
+    if (img === 'musculacao') img = imgMusculacao
+
+    export let icon
+    if (icon === 'muscle') icon = iconMuscle
 
 </script>
 
-<section class="intro" style="background-image: url({imgHome});">
+<section class="intro" style="background-image: url({img});">
     <div class="intro__wrapper wrap">
-        <h1>Você esta pronto <br> para o desafio? <img src="{icon}" alt=""></h1>
-        <p>A Academia Local está pronta para te ajudar a chegar mais longe e alcançar sua melhor performance.</p>
-        <a class="btn" href="/sobre">Sobre</a>
+        <h1>{@html title} <img src="{icon}" alt=""></h1>
+        <p>{content}</p>
+        <a class="btn" href="{href}">{btn}</a>
     </div>
 </section>
 
