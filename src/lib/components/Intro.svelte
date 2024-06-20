@@ -5,7 +5,7 @@
     export let title = "Você esta pronto <br /> para o desafio?"
     export let content = 'A Academia Local está pronta para te ajudar a chegar mais longe e alcançar sua melhor performance.'
     export let btn = "Saiba mais"
-    export  let href = "/"
+    export  let href
 
     export let img
     if (img === 'musculacao') img = imgMusculacao

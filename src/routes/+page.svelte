@@ -4,8 +4,8 @@
 
 <Intro 
  
-
-    href = "/"
+    btn = "Sobre"
+    href = "/sobre"
     icon = "muscle"
     img = "musculacao"
 
